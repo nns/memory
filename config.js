@@ -42,7 +42,7 @@ configData.general = {
 /////////////
 
 configData.log = {
-	"logging" : true,
+	"logging" : false,
 	"logFolder" : "./log/",
 	"logFile" : "api.log",
 	// Should we log the actual requests coming in (and their params)?
