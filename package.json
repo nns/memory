@@ -1,0 +1,24 @@
+{
+  "author": "YOU <YOU@example.com>",
+  "name": "my_actionHero_project",
+  "description": "",
+  "version": "0.0.1",
+  "homepage": "",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "main": "app.js",
+  "keywords": "",
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "dependencies": {
+    "actionHero": "x",
+    "date-utils": "~1.2.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  }
+}
