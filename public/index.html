@@ -52,6 +52,12 @@
       <script src="js/bootstrap.min.js"></script>
       <script type="text/javascript">
           $(function(){
+            if(localStorage.user){
+              $('#user').val(localStorage.user);
+            }
+            if(localStorage['o_user']){
+              $('#o_user').val(localStorage['o_user']);
+            }
             $('#input').on('click', function(){
               if($('#memory').val() !== '' && $('#user').val() !== ''){
                   var url = '/memory/' + encodeURIComponent($('#user').val()) + '/' + encodeURIComponent($('#memory').val()) + '/' + encodeURIComponent($('#tags').val());
@@ -59,11 +65,12 @@
                       type: 'GET',
                       url: url
                   }).done(function(msg){
-                    console.log('done');
                     $('#memory').val('');
-                    $('#tags').val('');
+                    $('#tags').val(''); 
+
                   });
               }
+              localStorage.user = $('#user').val();
               return false;
             });
 
@@ -83,6 +90,7 @@
 
                 });
               }
+              localStorage['o_user'] = $('#o_user').val();
               return false;
             });
           });
