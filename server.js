@@ -12,5 +12,5 @@ params.initFunction = function(api, next){
 
 // start the server!
 actionHero.start(params, function(api){
-	//api.log('Boot Sucessful!');
+	console.log('Boot Sucessful!');
 });
